@@ -1,0 +1,55 @@
+{
+  "name": "@steveush/grunt-web",
+  "description": "A configuration wrapper to build JS & CSS.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Steve Usher",
+    "url": "https://github.com/steveush"
+  },
+  "repository": "https://github.com/steveush/grunt-web",
+  "bugs": "https://github.com/steveush/grunt-web/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "test": "grunt clean&&jest ./test",
+    "test-build": "grunt --verbose"
+  },
+  "files": [
+    "tasks"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@lodder/grunt-postcss": "^3.1.1",
+    "@steveush/grunt-map-normalizer": "^0.0.2",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "chalk": "^4.1.2",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-sass": "^3.1.0",
+    "sass": "^1.60.0"
+  },
+  "peerDependencies": {
+    "grunt": "^1.6.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "browserslist": "^4.21.5",
+    "dir-compare": "^4.0.0"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "keywords": [
+    "gruntplugin",
+    "js",
+    "css",
+    "sass",
+    "babel"
+  ]
+}
