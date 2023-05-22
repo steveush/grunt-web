@@ -5,11 +5,13 @@ const chalk = require( "chalk" );
 
 module.exports = function( grunt ) {
 
-    grunt.task.loadTasks( path.resolve( __dirname, '../node_modules/grunt-contrib-clean/tasks' ) );
-    grunt.task.loadTasks( path.resolve( __dirname, '../node_modules/grunt-contrib-concat/tasks' ) );
-    grunt.task.loadTasks( path.resolve( __dirname, '../node_modules/grunt-contrib-uglify/tasks' ) );
-    grunt.task.loadTasks( path.resolve( __dirname, '../node_modules/grunt-babel/tasks' ) );
-    grunt.task.loadTasks( path.resolve( __dirname, '../node_modules/@steveush/grunt-map-normalizer/tasks' ) );
+    const root = process.cwd();
+
+    grunt.task.loadTasks( path.resolve( root, 'node_modules/grunt-contrib-clean/tasks' ) );
+    grunt.task.loadTasks( path.resolve( root, 'node_modules/grunt-contrib-concat/tasks' ) );
+    grunt.task.loadTasks( path.resolve( root, 'node_modules/grunt-contrib-uglify/tasks' ) );
+    grunt.task.loadTasks( path.resolve( root, 'node_modules/grunt-babel/tasks' ) );
+    grunt.task.loadTasks( path.resolve( root, 'node_modules/@steveush/grunt-map-normalizer/tasks' ) );
 
     grunt.registerMultiTask( 'webjs', 'Builds JS using Babel, Concat & Uglify.', function() {
 

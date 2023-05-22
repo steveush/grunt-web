@@ -8,9 +8,11 @@ const logVerboseTask = require( "./utils/logVerboseTask" );
 
 module.exports = function( grunt ) {
 
-    grunt.task.loadTasks( path.resolve( __dirname, '../node_modules/grunt-sass/tasks' ) );
-    grunt.task.loadTasks( path.resolve( __dirname, '../node_modules/@lodder/grunt-postcss/tasks' ) );
-    grunt.task.loadTasks( path.resolve( __dirname, '../node_modules/@steveush/grunt-map-normalizer/tasks' ) );
+    const root = process.cwd();
+
+    grunt.task.loadTasks( path.resolve( root, 'node_modules/grunt-sass/tasks' ) );
+    grunt.task.loadTasks( path.resolve( root, 'node_modules/@lodder/grunt-postcss/tasks' ) );
+    grunt.task.loadTasks( path.resolve( root, 'node_modules/@steveush/grunt-map-normalizer/tasks' ) );
 
     grunt.registerMultiTask( 'webcss', 'Builds CSS using SASS, Autoprefixer & CSSNano.', function() {
 
