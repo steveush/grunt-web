@@ -25,8 +25,8 @@ test( 'webcss:mapped', () => {
             fs.readFile( './test/expected/mapped/output.css.map', 'utf8' ),
             fs.readFile( './test/received/mapped/output.css', 'utf8' ),
             fs.readFile( './test/received/mapped/output.css.map', 'utf8' )
-        ] ).then( ( [ expected_js, expected_map, received_js, received_map ] ) => {
-            expect( received_js ).toBe( expected_js );
+        ] ).then( ( [ expected_css, expected_map, received_css, received_map ] ) => {
+            expect( received_css ).toBe( expected_css );
             expect( received_map ).toBe( expected_map );
         } );
     } );
