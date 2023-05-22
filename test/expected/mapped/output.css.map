@@ -1,0 +1,1 @@
+{"version":3,"sources":["output/css"],"names":[],"mappings":"AAAA,qCACE,UCCF,CDFA,gCACE,UCCF","file":"output.css","sourcesContent":[".test-autoprefixer::placeholder {\r\n  color: gray;\r\n}"]}
