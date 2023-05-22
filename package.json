@@ -1,7 +1,7 @@
 {
   "name": "@steveush/grunt-web",
   "description": "A configuration wrapper to build JS & CSS.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": {
     "name": "Steve Usher",
     "url": "https://github.com/steveush"
